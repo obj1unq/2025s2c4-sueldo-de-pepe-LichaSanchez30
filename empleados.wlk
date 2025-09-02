@@ -2,18 +2,14 @@ import categorias.*
 import bonos.*
 
 object pepe {
-	var property categoria = cadete
+	var property categoria = medioTiempo
     var property faltas = 0
     var property bonoPorResultados = porcentaje 
     var property bonoPorPresentismo = montoFijo
     var property trabajaMedioTiempo = false
 
     method neto() {
-        if(trabajaMedioTiempo){
-            return medioTiempo.categoriaBase(categoria)
-        }else{
             return categoria.neto()
-        }
     }
 
     method sueldo() {

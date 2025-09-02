@@ -25,7 +25,13 @@ object vendedor{
 
 
 object medioTiempo {
-    method categoriaBase(categoria) {
-        return categoria.neto() / 2
+    var categoriaBase =  cadete
+    method neto() {
+        return categoriaBase.neto() / 2
     }
+
+    method categoriaBase(_categoriaBase) {
+        categoriaBase = _categoriaBase
+    }
+
 }
