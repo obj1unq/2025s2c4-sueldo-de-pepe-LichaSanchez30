@@ -39,7 +39,6 @@ describe "Pepe" {
 
 	test "Pepe categoria medio tiempo"{
 		pepe.categoria(gerente)
-		pepe.trabajaMedioTiempo(false)
 		assert.equals(15000, pepe.neto())
 	}
 	
@@ -70,7 +69,6 @@ describe "Ernesto prueba"{
 
 	test "Ernesto - caso prueba"{
 		pepe.categoria(cadete)
-		pepe.trabajaMedioTiempo(true)
 		pepe.bonoPorPresentismo(porcentaje)
 		pepe.bonoPorPresentismo(demagogico)
 		roque.bonoPorResultados(montoFijo)
